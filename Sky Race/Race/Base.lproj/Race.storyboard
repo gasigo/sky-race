@@ -93,10 +93,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="raceDateLabel" destination="MD6-HK-kbh" id="XBp-fo-Uez"/>
-                                    <outlet property="raceHourLabel" destination="h2b-TJ-h8f" id="bNV-XR-phG"/>
-                                    <outlet property="raceNameLabel" destination="pU3-dz-05M" id="Txj-vY-NWq"/>
-                                    <outlet property="raceRidesCountLabel" destination="MhI-gm-Srs" id="96Y-GQ-dVS"/>
+                                    <outlet property="dateLabel" destination="MD6-HK-kbh" id="Ncm-sy-tdb"/>
+                                    <outlet property="hourLabel" destination="h2b-TJ-h8f" id="3sA-Ss-vhZ"/>
+                                    <outlet property="nameLabel" destination="pU3-dz-05M" id="7wq-i0-mkx"/>
+                                    <outlet property="ridesCountLabel" destination="MhI-gm-Srs" id="SVv-0H-Ghi"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

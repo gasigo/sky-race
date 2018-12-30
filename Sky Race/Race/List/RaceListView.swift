@@ -32,6 +32,8 @@ class RaceListView: UITableViewController, RaceListViewProtocol {
 		self.presenter = presenter
 	}
 	
+	// MARK: - Interface Implementation
+	
 	func load(races: [Race]) {
 		self.races = races
 		DispatchQueue.main.async {
@@ -59,6 +61,8 @@ class RaceListView: UITableViewController, RaceListViewProtocol {
 		}
 	}
 	
+	// MARK: - UITableView Methods
+	
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -76,6 +80,8 @@ class RaceListView: UITableViewController, RaceListViewProtocol {
 		raceCell.configure(name: race.name, hour: race.time, date: race.date, ridesCount: race.rides.count.description)
         return raceCell
     }
+	
+	// MARK: - UIStoryboard
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		guard let index = self.tableView.indexPathForSelectedRow else {
