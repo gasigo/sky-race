@@ -70,6 +70,7 @@ class RaceListInteractorTests: XCTestCase {
 	}
 	
 	func testGetRacesWhenResultIsError() {
+		// given
 		let expectation = XCTestExpectation(description: "get-races-when-result-is-error")
 		let result: Result<[Race]> = .error(nil)
 		let networkService = NetworkServiceMock(expectation: expectation, resultMock: result)
