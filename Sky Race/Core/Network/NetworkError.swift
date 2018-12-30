@@ -5,6 +5,6 @@
 
 enum NetworkError: Error {
 	case invalidURL
-	case unableToSerializeParameters
+	case unableToSerialize
 	case emptyResponse
 }

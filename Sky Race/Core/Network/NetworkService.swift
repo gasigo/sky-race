@@ -36,7 +36,7 @@ struct NetworkService: NetworkServiceProtocol {
 			
 			let decoder = JSONDecoder()
 			guard let result = try? decoder.decode(T.self, from: data) else {
-				handler(.error(NetworkError.emptyResponse))
+				handler(.error(NetworkError.unableToSerialize))
 				return
 			}
 			
