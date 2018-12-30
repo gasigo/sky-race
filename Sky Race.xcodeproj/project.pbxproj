@@ -10,6 +10,7 @@
 		C073549421D9171600D8FEF8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549321D9171600D8FEF8 /* NetworkService.swift */; };
 		C073549821D938D800D8FEF8 /* RaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549721D938D800D8FEF8 /* RaceListView.swift */; };
 		C073549A21D939AA00D8FEF8 /* RaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549921D939AA00D8FEF8 /* RaceCell.swift */; };
+		C073549C21D9426800D8FEF8 /* RaceRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549B21D9426800D8FEF8 /* RaceRequestData.swift */; };
 		C080ADC121D904FC00F50646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C080ADC021D904FC00F50646 /* AppDelegate.swift */; };
 		C080ADC621D904FC00F50646 /* Race.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C080ADC421D904FC00F50646 /* Race.storyboard */; };
 		C080ADC821D904FE00F50646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C080ADC721D904FE00F50646 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		C073549321D9171600D8FEF8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C073549721D938D800D8FEF8 /* RaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListView.swift; sourceTree = "<group>"; };
 		C073549921D939AA00D8FEF8 /* RaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCell.swift; sourceTree = "<group>"; };
+		C073549B21D9426800D8FEF8 /* RaceRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceRequestData.swift; sourceTree = "<group>"; };
 		C080ADBD21D904FC00F50646 /* Sky Race.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sky Race.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C080ADC021D904FC00F50646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C080ADC521D904FC00F50646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Race.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				C080ADC421D904FC00F50646 /* Race.storyboard */,
+				C073549B21D9426800D8FEF8 /* RaceRequestData.swift */,
 				C073549621D932AA00D8FEF8 /* List */,
 			);
 			path = Race;
@@ -255,6 +258,7 @@
 				C080ADC121D904FC00F50646 /* AppDelegate.swift in Sources */,
 				C0B3CA1821D9169C00F44B3A /* NetworkError.swift in Sources */,
 				C073549421D9171600D8FEF8 /* NetworkService.swift in Sources */,
+				C073549C21D9426800D8FEF8 /* RaceRequestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
