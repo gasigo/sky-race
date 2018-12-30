@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C03C94B621D9746800A52D45 /* RaceListInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94B521D9746800A52D45 /* RaceListInteractorMock.swift */; };
+		C03C94B821D9769400A52D45 /* RaceListRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94B721D9769400A52D45 /* RaceListRouterMock.swift */; };
+		C03C94BA21D9785000A52D45 /* RaceListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94B921D9785000A52D45 /* RaceListViewMock.swift */; };
 		C073549421D9171600D8FEF8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549321D9171600D8FEF8 /* NetworkService.swift */; };
 		C073549821D938D800D8FEF8 /* RaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549721D938D800D8FEF8 /* RaceListView.swift */; };
 		C073549A21D939AA00D8FEF8 /* RaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549921D939AA00D8FEF8 /* RaceCell.swift */; };
@@ -18,11 +21,12 @@
 		C07354A721D9536C00D8FEF8 /* RaceListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07354A621D9536C00D8FEF8 /* RaceListBuilder.swift */; };
 		C07354A921D9570700D8FEF8 /* RaceListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07354A821D9570700D8FEF8 /* RaceListPresenter.swift */; };
 		C07354AB21D9670200D8FEF8 /* RaceListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07354AA21D9670200D8FEF8 /* RaceListRouter.swift */; };
+		C07354B021D96C9900D8FEF8 /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07354AF21D96C9900D8FEF8 /* NetworkServiceMock.swift */; };
+		C07354B421D970D800D8FEF8 /* RaceListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07354B321D970D800D8FEF8 /* RaceListInteractorTests.swift */; };
 		C080ADC121D904FC00F50646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C080ADC021D904FC00F50646 /* AppDelegate.swift */; };
 		C080ADC621D904FC00F50646 /* Race.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C080ADC421D904FC00F50646 /* Race.storyboard */; };
 		C080ADC821D904FE00F50646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C080ADC721D904FE00F50646 /* Assets.xcassets */; };
 		C080ADCB21D904FE00F50646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C080ADC921D904FE00F50646 /* LaunchScreen.storyboard */; };
-		C080ADD621D904FE00F50646 /* Sky_RaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C080ADD521D904FE00F50646 /* Sky_RaceTests.swift */; };
 		C0B3CA1421D9159400F44B3A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B3CA1321D9159400F44B3A /* Result.swift */; };
 		C0B3CA1621D9167A00F44B3A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B3CA1521D9167A00F44B3A /* HTTPMethod.swift */; };
 		C0B3CA1821D9169C00F44B3A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B3CA1721D9169C00F44B3A /* NetworkError.swift */; };
@@ -40,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C03C94B521D9746800A52D45 /* RaceListInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListInteractorMock.swift; sourceTree = "<group>"; };
+		C03C94B721D9769400A52D45 /* RaceListRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListRouterMock.swift; sourceTree = "<group>"; };
+		C03C94B921D9785000A52D45 /* RaceListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListViewMock.swift; sourceTree = "<group>"; };
 		C073549321D9171600D8FEF8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C073549721D938D800D8FEF8 /* RaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListView.swift; sourceTree = "<group>"; };
 		C073549921D939AA00D8FEF8 /* RaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCell.swift; sourceTree = "<group>"; };
@@ -51,6 +58,8 @@
 		C07354A621D9536C00D8FEF8 /* RaceListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListBuilder.swift; sourceTree = "<group>"; };
 		C07354A821D9570700D8FEF8 /* RaceListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListPresenter.swift; sourceTree = "<group>"; };
 		C07354AA21D9670200D8FEF8 /* RaceListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListRouter.swift; sourceTree = "<group>"; };
+		C07354AF21D96C9900D8FEF8 /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
+		C07354B321D970D800D8FEF8 /* RaceListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListInteractorTests.swift; sourceTree = "<group>"; };
 		C080ADBD21D904FC00F50646 /* Sky Race.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sky Race.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C080ADC021D904FC00F50646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C080ADC521D904FC00F50646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Race.storyboard; sourceTree = "<group>"; };
@@ -58,7 +67,6 @@
 		C080ADCA21D904FE00F50646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C080ADCC21D904FE00F50646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C080ADD121D904FE00F50646 /* Sky RaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sky RaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C080ADD521D904FE00F50646 /* Sky_RaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sky_RaceTests.swift; sourceTree = "<group>"; };
 		C080ADD721D904FE00F50646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0B3CA1321D9159400F44B3A /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		C0B3CA1521D9167A00F44B3A /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -84,6 +92,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C03C94B321D9744C00A52D45 /* Race */ = {
+			isa = PBXGroup;
+			children = (
+				C03C94B421D9745200A52D45 /* List */,
+			);
+			path = Race;
+			sourceTree = "<group>";
+		};
+		C03C94B421D9745200A52D45 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				C03C94B721D9769400A52D45 /* RaceListRouterMock.swift */,
+				C03C94B521D9746800A52D45 /* RaceListInteractorMock.swift */,
+				C03C94B921D9785000A52D45 /* RaceListViewMock.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 		C073549521D9329E00D8FEF8 /* Race */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +142,47 @@
 				C07354A221D9443000D8FEF8 /* Horse.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		C07354AC21D96C5C00D8FEF8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C03C94B321D9744C00A52D45 /* Race */,
+				C07354AD21D96C7E00D8FEF8 /* Core */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		C07354AD21D96C7E00D8FEF8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C07354AE21D96C8700D8FEF8 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C07354AE21D96C8700D8FEF8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C07354AF21D96C9900D8FEF8 /* NetworkServiceMock.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C07354B121D970BA00D8FEF8 /* Race */ = {
+			isa = PBXGroup;
+			children = (
+				C07354B221D970C200D8FEF8 /* List */,
+			);
+			path = Race;
+			sourceTree = "<group>";
+		};
+		C07354B221D970C200D8FEF8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				C07354B321D970D800D8FEF8 /* RaceListInteractorTests.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 		C080ADB421D904FC00F50646 = {
@@ -152,7 +219,8 @@
 		C080ADD421D904FE00F50646 /* Sky RaceTests */ = {
 			isa = PBXGroup;
 			children = (
-				C080ADD521D904FE00F50646 /* Sky_RaceTests.swift */,
+				C07354B121D970BA00D8FEF8 /* Race */,
+				C07354AC21D96C5C00D8FEF8 /* Mocks */,
 				C080ADD721D904FE00F50646 /* Info.plist */,
 			);
 			path = "Sky RaceTests";
@@ -302,7 +370,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C080ADD621D904FE00F50646 /* Sky_RaceTests.swift in Sources */,
+				C07354B021D96C9900D8FEF8 /* NetworkServiceMock.swift in Sources */,
+				C03C94B821D9769400A52D45 /* RaceListRouterMock.swift in Sources */,
+				C03C94BA21D9785000A52D45 /* RaceListViewMock.swift in Sources */,
+				C07354B421D970D800D8FEF8 /* RaceListInteractorTests.swift in Sources */,
+				C03C94B621D9746800A52D45 /* RaceListInteractorMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
