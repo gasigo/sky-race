@@ -4,7 +4,6 @@
 //
 
 enum RaceRequestData: RequestData {
-	
 	case getRaces
 	
 	var method: HTTPMethod {
@@ -17,11 +16,11 @@ enum RaceRequestData: RequestData {
 	var host: String {
 		return "https://api.myjson.com"
 	}
-	
+
 	var path: String {
 		switch self {
 		case .getRaces:
-			return "/bins/1dgdk4"
+			return "/bins/16hthw"
 		}
 	}
 	
