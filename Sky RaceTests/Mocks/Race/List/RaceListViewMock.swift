@@ -8,16 +8,16 @@ import UIKit
 @testable import Sky_Race
 
 class RaceListViewMock: RaceListViewProtocol {
-	private let expectation: XCTestExpectation
+	private let expectations: [XCTestExpectation]
 	private let presenter: RaceListPresenterProtocol
 	private let raceMock: Race?
 	private let segueMock: UIStoryboardSegue?
 	
-	init(expectation: XCTestExpectation,
+	init(expectations: [XCTestExpectation] = [],
 		 presenter: RaceListPresenterProtocol,
 		 raceMock: Race? = nil,
 		 segueMock: UIStoryboardSegue? = nil) {
-		self.expectation = expectation
+		self.expectations = expectations
 		self.presenter = presenter
 		self.raceMock = raceMock
 		self.segueMock = segueMock
@@ -32,18 +32,42 @@ class RaceListViewMock: RaceListViewProtocol {
 	}
 	
 	func load(races: [Race]) {
-		self.expectation.fulfill()
+		guard let expectation =
+			self.expectations.first(where: { $0.description == ExpectationConstants.load.rawValue }) else {
+			return
+		}
+		
+		expectation.fulfill()
 	}
 	
 	func showAlert(title: String, message: String) {
-		self.expectation.fulfill()
-	}
+		guard let expectation =
+			self.expectations.first(where: { $0.description == ExpectationConstants.showAlert.rawValue }) else {
+				return
+		}
+		
+		expectation.fulfill()	}
 	
 	func startLoading() {
-		self.expectation.fulfill()
-	}
+		guard let expectation =
+			self.expectations.first(where: { $0.description == ExpectationConstants.startLoading.rawValue }) else {
+				return
+		}
+		
+		expectation.fulfill()	}
 	
 	func stopLoading() {
-		self.expectation.fulfill()
+		guard let expectation =
+			self.expectations.first(where: { $0.description == ExpectationConstants.stopLoading.rawValue }) else {
+				return
+		}
+		
+		expectation.fulfill()	}
+	
+	enum ExpectationConstants: String {
+		case load
+		case showAlert
+		case startLoading
+		case stopLoading
 	}
 }
