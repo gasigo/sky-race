@@ -6,17 +6,17 @@
 import UIKit
 
 class RaceCell: UITableViewCell {
-	@IBOutlet private weak var raceNameLabel: UILabel!
-	@IBOutlet private weak var raceHourLabel: UILabel!
-	@IBOutlet private weak var raceDateLabel: UILabel!
-	@IBOutlet private weak var raceRidesCountLabel: UILabel!
+	@IBOutlet private weak var nameLabel: UILabel!
+	@IBOutlet private weak var hourLabel: UILabel!
+	@IBOutlet private weak var dateLabel: UILabel!
+	@IBOutlet private weak var ridesCountLabel: UILabel!
 	
 	static let reusableIdentifier = "RaceCell"
 	
 	func configure(name: String, hour: String, date: String, ridesCount: String) {
-		self.raceNameLabel.text = name
-		self.raceHourLabel.text = hour
-		self.raceDateLabel.text = date
-		self.raceRidesCountLabel.text = ridesCount
+		self.nameLabel.text = name
+		self.hourLabel.text = hour
+		self.dateLabel.text = date
+		self.ridesCountLabel.text = ridesCount
 	}
 }
