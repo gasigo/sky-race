@@ -10,6 +10,7 @@
 		C03C94B621D9746800A52D45 /* RaceListInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94B521D9746800A52D45 /* RaceListInteractorMock.swift */; };
 		C03C94B821D9769400A52D45 /* RaceListRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94B721D9769400A52D45 /* RaceListRouterMock.swift */; };
 		C03C94BA21D9785000A52D45 /* RaceListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94B921D9785000A52D45 /* RaceListViewMock.swift */; };
+		C03C94BE21D97A7E00A52D45 /* RaceListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94BD21D97A7E00A52D45 /* RaceListPresenterTests.swift */; };
 		C073549421D9171600D8FEF8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549321D9171600D8FEF8 /* NetworkService.swift */; };
 		C073549821D938D800D8FEF8 /* RaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549721D938D800D8FEF8 /* RaceListView.swift */; };
 		C073549A21D939AA00D8FEF8 /* RaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549921D939AA00D8FEF8 /* RaceCell.swift */; };
@@ -47,6 +48,7 @@
 		C03C94B521D9746800A52D45 /* RaceListInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListInteractorMock.swift; sourceTree = "<group>"; };
 		C03C94B721D9769400A52D45 /* RaceListRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListRouterMock.swift; sourceTree = "<group>"; };
 		C03C94B921D9785000A52D45 /* RaceListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListViewMock.swift; sourceTree = "<group>"; };
+		C03C94BD21D97A7E00A52D45 /* RaceListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListPresenterTests.swift; sourceTree = "<group>"; };
 		C073549321D9171600D8FEF8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C073549721D938D800D8FEF8 /* RaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListView.swift; sourceTree = "<group>"; };
 		C073549921D939AA00D8FEF8 /* RaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCell.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				C07354B321D970D800D8FEF8 /* RaceListInteractorTests.swift */,
+				C03C94BD21D97A7E00A52D45 /* RaceListPresenterTests.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				C07354B021D96C9900D8FEF8 /* NetworkServiceMock.swift in Sources */,
 				C03C94B821D9769400A52D45 /* RaceListRouterMock.swift in Sources */,
 				C03C94BA21D9785000A52D45 /* RaceListViewMock.swift in Sources */,
+				C03C94BE21D97A7E00A52D45 /* RaceListPresenterTests.swift in Sources */,
 				C07354B421D970D800D8FEF8 /* RaceListInteractorTests.swift in Sources */,
 				C03C94B621D9746800A52D45 /* RaceListInteractorMock.swift in Sources */,
 			);

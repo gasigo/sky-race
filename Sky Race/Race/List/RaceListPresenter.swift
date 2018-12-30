@@ -42,7 +42,7 @@ class RaceListPresenter: RaceListPresenterProtocol {
 	}
 	
 	func handle(segue: UIStoryboardSegue, race: Race) {
-		guard segue.identifier == "RaceDetailView" else {
+		guard segue.identifier == Constants.segueIdentifier.rawValue else {
 			return
 		}
 		
@@ -52,5 +52,6 @@ class RaceListPresenter: RaceListPresenterProtocol {
 	enum Constants: String {
 		case errorTitle = "Error"
 		case errorMessage = "Could't fetch races data."
+		case segueIdentifier = "RaceDetailView"
 	}
 }
