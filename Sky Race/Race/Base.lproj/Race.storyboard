@@ -28,7 +28,7 @@
         <!--Races-->
         <scene sceneID="9V3-Lg-ueY">
             <objects>
-                <tableViewController title="Races" id="KGE-7U-uRa" customClass="RaceListView" customModule="Sky_Race" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="RaceListView" title="Races" id="KGE-7U-uRa" customClass="RaceListView" customModule="Sky_Race" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Oy9-g0-cvy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
