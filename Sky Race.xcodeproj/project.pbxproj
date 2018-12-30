@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C073549421D9171600D8FEF8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549321D9171600D8FEF8 /* NetworkService.swift */; };
 		C080ADC121D904FC00F50646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C080ADC021D904FC00F50646 /* AppDelegate.swift */; };
 		C080ADC321D904FC00F50646 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C080ADC221D904FC00F50646 /* ViewController.swift */; };
 		C080ADC621D904FC00F50646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C080ADC421D904FC00F50646 /* Main.storyboard */; };
 		C080ADC821D904FE00F50646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C080ADC721D904FE00F50646 /* Assets.xcassets */; };
 		C080ADCB21D904FE00F50646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C080ADC921D904FE00F50646 /* LaunchScreen.storyboard */; };
 		C080ADD621D904FE00F50646 /* Sky_RaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C080ADD521D904FE00F50646 /* Sky_RaceTests.swift */; };
+		C0B3CA1421D9159400F44B3A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B3CA1321D9159400F44B3A /* Result.swift */; };
+		C0B3CA1621D9167A00F44B3A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B3CA1521D9167A00F44B3A /* HTTPMethod.swift */; };
+		C0B3CA1821D9169C00F44B3A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B3CA1721D9169C00F44B3A /* NetworkError.swift */; };
+		C0B3CA1A21D916C100F44B3A /* RequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B3CA1921D916C100F44B3A /* RequestData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C073549321D9171600D8FEF8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C080ADBD21D904FC00F50646 /* Sky Race.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sky Race.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C080ADC021D904FC00F50646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C080ADC221D904FC00F50646 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +42,10 @@
 		C080ADD121D904FE00F50646 /* Sky RaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sky RaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C080ADD521D904FE00F50646 /* Sky_RaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sky_RaceTests.swift; sourceTree = "<group>"; };
 		C080ADD721D904FE00F50646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0B3CA1321D9159400F44B3A /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		C0B3CA1521D9167A00F44B3A /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		C0B3CA1721D9169C00F44B3A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C0B3CA1921D916C100F44B3A /* RequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,7 @@
 		C080ADBF21D904FC00F50646 /* Sky Race */ = {
 			isa = PBXGroup;
 			children = (
+				C0B3CA1221D9157F00F44B3A /* Core */,
 				C080ADC021D904FC00F50646 /* AppDelegate.swift */,
 				C080ADC221D904FC00F50646 /* ViewController.swift */,
 				C080ADC421D904FC00F50646 /* Main.storyboard */,
@@ -94,6 +105,26 @@
 				C080ADD721D904FE00F50646 /* Info.plist */,
 			);
 			path = "Sky RaceTests";
+			sourceTree = "<group>";
+		};
+		C0B3CA1121D9154C00F44B3A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C0B3CA1521D9167A00F44B3A /* HTTPMethod.swift */,
+				C0B3CA1721D9169C00F44B3A /* NetworkError.swift */,
+				C0B3CA1921D916C100F44B3A /* RequestData.swift */,
+				C073549321D9171600D8FEF8 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C0B3CA1221D9157F00F44B3A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C0B3CA1121D9154C00F44B3A /* Network */,
+				C0B3CA1321D9159400F44B3A /* Result.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +228,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B3CA1621D9167A00F44B3A /* HTTPMethod.swift in Sources */,
+				C0B3CA1421D9159400F44B3A /* Result.swift in Sources */,
 				C080ADC321D904FC00F50646 /* ViewController.swift in Sources */,
+				C0B3CA1A21D916C100F44B3A /* RequestData.swift in Sources */,
 				C080ADC121D904FC00F50646 /* AppDelegate.swift in Sources */,
+				C0B3CA1821D9169C00F44B3A /* NetworkError.swift in Sources */,
+				C073549421D9171600D8FEF8 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
