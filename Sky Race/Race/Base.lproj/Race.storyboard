@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="apx-pH-wvm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="yXi-or-WyC">
+            <objects>
+                <navigationController toolbarHidden="NO" id="apx-pH-wvm" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="cCu-OB-fAW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KGE-7U-uRa" kind="relationship" relationship="rootViewController" id="esH-aw-eS2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUc-9O-MoC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2285" y="-196"/>
+        </scene>
+        <!--Races-->
+        <scene sceneID="9V3-Lg-ueY">
+            <objects>
+                <tableViewController storyboardIdentifier="RaceListView" title="Races" id="KGE-7U-uRa" customClass="RaceListView" customModule="Sky_Race" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Oy9-g0-cvy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="LmS-Bt-yl7">
+                            <rect key="frame" x="0.0" y="103" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RaceCell" rowHeight="75" id="EYG-gH-tre" customClass="RaceCell" customModule="Sky_Race" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EYG-gH-tre" id="hM2-mz-c0v">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Race Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pU3-dz-05M">
+                                            <rect key="frame" x="16" y="28.5" width="78.5" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:45h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2b-TJ-h8f">
+                                            <rect key="frame" x="102.5" y="28.5" width="47.5" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-01-03" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MD6-HK-kbh">
+                                            <rect key="frame" x="291" y="11" width="68" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rides" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="111-ih-eWp">
+                                            <rect key="frame" x="330" y="49" width="29" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="400" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhI-gm-Srs">
+                                            <rect key="frame" x="305" y="49" width="23" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="MD6-HK-kbh" firstAttribute="top" secondItem="hM2-mz-c0v" secondAttribute="top" constant="11" id="3su-Ty-DiD"/>
+                                        <constraint firstItem="h2b-TJ-h8f" firstAttribute="leading" secondItem="pU3-dz-05M" secondAttribute="trailing" constant="8" id="KtX-pW-o9d"/>
+                                        <constraint firstItem="MhI-gm-Srs" firstAttribute="centerY" secondItem="111-ih-eWp" secondAttribute="centerY" id="Ola-dx-SRV"/>
+                                        <constraint firstAttribute="bottom" secondItem="111-ih-eWp" secondAttribute="bottom" constant="10.5" id="Rwf-TJ-eAz"/>
+                                        <constraint firstItem="MhI-gm-Srs" firstAttribute="top" secondItem="MD6-HK-kbh" secondAttribute="bottom" constant="23" id="VA9-vw-v92"/>
+                                        <constraint firstAttribute="trailing" secondItem="MD6-HK-kbh" secondAttribute="trailing" constant="16" id="YIu-kd-iZu"/>
+                                        <constraint firstItem="111-ih-eWp" firstAttribute="leading" secondItem="MhI-gm-Srs" secondAttribute="trailing" constant="2" id="a0v-OC-q0R"/>
+                                        <constraint firstItem="pU3-dz-05M" firstAttribute="centerY" secondItem="hM2-mz-c0v" secondAttribute="centerY" id="g0A-ts-cro"/>
+                                        <constraint firstItem="MD6-HK-kbh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="h2b-TJ-h8f" secondAttribute="trailing" constant="4" id="hEe-Md-gcD"/>
+                                        <constraint firstItem="h2b-TJ-h8f" firstAttribute="centerY" secondItem="pU3-dz-05M" secondAttribute="centerY" id="jYb-LP-QXB"/>
+                                        <constraint firstItem="pU3-dz-05M" firstAttribute="leading" secondItem="hM2-mz-c0v" secondAttribute="leading" constant="16" id="piL-7D-Igj"/>
+                                        <constraint firstItem="111-ih-eWp" firstAttribute="trailing" secondItem="MD6-HK-kbh" secondAttribute="trailing" id="qbo-fn-phO"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLabel" destination="MD6-HK-kbh" id="Ncm-sy-tdb"/>
+                                    <outlet property="hourLabel" destination="h2b-TJ-h8f" id="3sA-Ss-vhZ"/>
+                                    <outlet property="nameLabel" destination="pU3-dz-05M" id="7wq-i0-mkx"/>
+                                    <outlet property="ridesCountLabel" destination="MhI-gm-Srs" id="SVv-0H-Ghi"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KGE-7U-uRa" id="NQ3-4M-L4M"/>
+                            <outlet property="delegate" destination="KGE-7U-uRa" id="LWa-cO-eJk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Sly-0T-Hod"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qli-SQ-eDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1500" y="-197"/>
+        </scene>
+    </scenes>
+</document>
