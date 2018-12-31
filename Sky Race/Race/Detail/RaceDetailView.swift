@@ -7,6 +7,7 @@ import UIKit
 
 protocol RaceDetailViewProtocol: class {
 	func load(rides: [Ride])
+	func presentActionSheet(title: String, options: [OrderOption])
 }
 
 class RaceDetailView: UIViewController, RaceDetailViewProtocol {
@@ -30,6 +31,19 @@ class RaceDetailView: UIViewController, RaceDetailViewProtocol {
 		DispatchQueue.main.async {
 			self.tableView.reloadData()
 		}
+	}
+	
+	func presentActionSheet(title: String, options: [OrderOption]) {
+		let actionSheet = UIAlertController(title: "Order", message: nil, preferredStyle: .actionSheet)
+		
+		for option in options {
+			actionSheet.addAction(UIAlertAction(title: option.rawValue, style: .default, handler: { action in
+				self.presenter.handleOrderOptionSelectAction(option: option)
+			}))
+		}
+		
+		actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+		self.present(actionSheet, animated: true, completion: nil)
 	}
 	
 	@IBAction func didTapOrderButton(_ sender: Any) {
