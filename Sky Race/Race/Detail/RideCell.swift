@@ -11,6 +11,8 @@ class RideCell: UITableViewCell {
 	@IBOutlet weak var horseSexLabel: UILabel!
 	@IBOutlet weak var handicapLabel: UILabel!
 	
+	static let reusableIdentifier = "RideCell"
+
 	func configure(clothNumber: String, horseName: String, horseSex: String, handicap: String) {
 		self.clothNumberLabel.text = clothNumber
 		self.horseNameLabel.text = horseName
