@@ -15,6 +15,6 @@ struct RaceListRouter: RaceListRouterProtocol {
 			return
 		}
 		
-		raceDetailView.set(rides: race.rides)
+		RaceDetailBuilder.setupRaceDetail(view: raceDetailView, rides: race.rides)
 	}
 }
