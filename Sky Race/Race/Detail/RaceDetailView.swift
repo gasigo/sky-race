@@ -43,7 +43,10 @@ class RaceDetailView: UIViewController, RaceDetailViewProtocol {
 		}
 		
 		actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-		self.present(actionSheet, animated: true, completion: nil)
+		
+		DispatchQueue.main.async {
+			self.present(actionSheet, animated: true, completion: nil)
+		}
 	}
 	
 	@IBAction func didTapOrderButton(_ sender: Any) {
