@@ -11,6 +11,10 @@ protocol RaceListRouterProtocol {
 
 struct RaceListRouter: RaceListRouterProtocol {
 	func routeToRaceDetailView(using segue: UIStoryboardSegue, race: Race) {
-		// TODO
+		guard let raceDetailView = segue.destination as? RaceDetailView else {
+			return
+		}
+		
+		RaceDetailBuilder.setupRaceDetail(view: raceDetailView, rides: race.rides)
 	}
 }

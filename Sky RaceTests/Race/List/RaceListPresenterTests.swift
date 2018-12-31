@@ -28,7 +28,7 @@ class RaceListPresenterTests: XCTestCase {
 		let interactorExpecation = XCTestExpectation(description: "interactor-expecation")
 		let router = RaceListRouterMock()
 		let horse = Horse(name: "pangare", sex: "m")
-		let ride = Ride(clothNumber: 7, horse: horse, handicap: "4/7")
+		let ride = Ride(clothNumber: 7, horse: horse, handicap: "4/7", odds: "11/1", form: "form")
 		let race = Race(name: "mock race", date: "today", time: "now", rides: [ride])
 		let racesMock = [race, race, race]
 		let result: Result<[Race]> = .success(racesMock)
@@ -89,7 +89,7 @@ class RaceListPresenterTests: XCTestCase {
 		let routerExpectation = XCTestExpectation(description: "mock")
 		let router = RaceListRouterMock(expectation: routerExpectation)
 		let horse = Horse(name: "pangare", sex: "m")
-		let ride = Ride(clothNumber: 7, horse: horse, handicap: "4/7")
+		let ride = Ride(clothNumber: 7, horse: horse, handicap: "4/7", odds: "11/1", form: "form")
 		let race = Race(name: "mock race", date: "today", time: "now", rides: [ride])
 		let segue = UIStoryboardSegue(identifier: RaceListPresenter.Constants.segueIdentifier.rawValue,
 									  source: UIViewController(),
@@ -112,7 +112,7 @@ class RaceListPresenterTests: XCTestCase {
 		routerExpectation.isInverted = true
 		let router = RaceListRouterMock()
 		let horse = Horse(name: "pangare", sex: "m")
-		let ride = Ride(clothNumber: 7, horse: horse, handicap: "4/7")
+		let ride = Ride(clothNumber: 7, horse: horse, handicap: "4/7", odds: "11/1", form: "form")
 		let race = Race(name: "mock race", date: "today", time: "now", rides: [ride])
 		let segue = UIStoryboardSegue(identifier: "wrong value",
 									  source: UIViewController(),
