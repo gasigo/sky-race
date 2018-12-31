@@ -16,6 +16,9 @@
 		C03C94C521D9A99600A52D45 /* RaceDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94C421D9A99600A52D45 /* RaceDetailPresenter.swift */; };
 		C03C94C921D9AD3200A52D45 /* RideDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94C821D9AD3200A52D45 /* RideDetailBuilder.swift */; };
 		C03C94CB21D9AFC000A52D45 /* RaceDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94CA21D9AFC000A52D45 /* RaceDetailRouter.swift */; };
+		C03C94CE21D9B8E400A52D45 /* RaceDetailRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94CD21D9B8E400A52D45 /* RaceDetailRouterMock.swift */; };
+		C03C94D021D9B92E00A52D45 /* RaceDetailViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94CF21D9B92E00A52D45 /* RaceDetailViewMock.swift */; };
+		C03C94D321D9BAA600A52D45 /* RaceDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94D221D9BAA600A52D45 /* RaceDetailPresenterTests.swift */; };
 		C073549421D9171600D8FEF8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549321D9171600D8FEF8 /* NetworkService.swift */; };
 		C073549821D938D800D8FEF8 /* RaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549721D938D800D8FEF8 /* RaceListView.swift */; };
 		C073549A21D939AA00D8FEF8 /* RaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549921D939AA00D8FEF8 /* RaceCell.swift */; };
@@ -59,6 +62,9 @@
 		C03C94C421D9A99600A52D45 /* RaceDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailPresenter.swift; sourceTree = "<group>"; };
 		C03C94C821D9AD3200A52D45 /* RideDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideDetailBuilder.swift; sourceTree = "<group>"; };
 		C03C94CA21D9AFC000A52D45 /* RaceDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailRouter.swift; sourceTree = "<group>"; };
+		C03C94CD21D9B8E400A52D45 /* RaceDetailRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailRouterMock.swift; sourceTree = "<group>"; };
+		C03C94CF21D9B92E00A52D45 /* RaceDetailViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailViewMock.swift; sourceTree = "<group>"; };
+		C03C94D221D9BAA600A52D45 /* RaceDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailPresenterTests.swift; sourceTree = "<group>"; };
 		C073549321D9171600D8FEF8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C073549721D938D800D8FEF8 /* RaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListView.swift; sourceTree = "<group>"; };
 		C073549921D939AA00D8FEF8 /* RaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCell.swift; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 		C03C94B321D9744C00A52D45 /* Race */ = {
 			isa = PBXGroup;
 			children = (
+				C03C94CC21D9B82500A52D45 /* Detail */,
 				C03C94B421D9745200A52D45 /* List */,
 			);
 			path = Race;
@@ -130,6 +137,23 @@
 				C03C94CA21D9AFC000A52D45 /* RaceDetailRouter.swift */,
 				C03C94C821D9AD3200A52D45 /* RideDetailBuilder.swift */,
 				C03C94C021D9992900A52D45 /* RideCell.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C03C94CC21D9B82500A52D45 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C03C94CD21D9B8E400A52D45 /* RaceDetailRouterMock.swift */,
+				C03C94CF21D9B92E00A52D45 /* RaceDetailViewMock.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C03C94D121D9B9E400A52D45 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C03C94D221D9BAA600A52D45 /* RaceDetailPresenterTests.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -197,6 +221,7 @@
 		C07354B121D970BA00D8FEF8 /* Race */ = {
 			isa = PBXGroup;
 			children = (
+				C03C94D121D9B9E400A52D45 /* Detail */,
 				C07354B221D970C200D8FEF8 /* List */,
 			);
 			path = Race;
@@ -405,7 +430,10 @@
 				C03C94B821D9769400A52D45 /* RaceListRouterMock.swift in Sources */,
 				C03C94BA21D9785000A52D45 /* RaceListViewMock.swift in Sources */,
 				C03C94BE21D97A7E00A52D45 /* RaceListPresenterTests.swift in Sources */,
+				C03C94CE21D9B8E400A52D45 /* RaceDetailRouterMock.swift in Sources */,
 				C07354B421D970D800D8FEF8 /* RaceListInteractorTests.swift in Sources */,
+				C03C94D321D9BAA600A52D45 /* RaceDetailPresenterTests.swift in Sources */,
+				C03C94D021D9B92E00A52D45 /* RaceDetailViewMock.swift in Sources */,
 				C03C94B621D9746800A52D45 /* RaceListInteractorMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

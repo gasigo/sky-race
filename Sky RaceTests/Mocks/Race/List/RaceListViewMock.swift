@@ -46,7 +46,8 @@ class RaceListViewMock: RaceListViewProtocol {
 				return
 		}
 		
-		expectation.fulfill()	}
+		expectation.fulfill()
+	}
 	
 	func startLoading() {
 		guard let expectation =
@@ -54,7 +55,8 @@ class RaceListViewMock: RaceListViewProtocol {
 				return
 		}
 		
-		expectation.fulfill()	}
+		expectation.fulfill()
+	}
 	
 	func stopLoading() {
 		guard let expectation =
@@ -62,7 +64,8 @@ class RaceListViewMock: RaceListViewProtocol {
 				return
 		}
 		
-		expectation.fulfill()	}
+		expectation.fulfill()
+	}
 	
 	enum ExpectationConstants: String {
 		case load
