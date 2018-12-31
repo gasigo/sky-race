@@ -12,6 +12,7 @@
 		C03C94BA21D9785000A52D45 /* RaceListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94B921D9785000A52D45 /* RaceListViewMock.swift */; };
 		C03C94BE21D97A7E00A52D45 /* RaceListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94BD21D97A7E00A52D45 /* RaceListPresenterTests.swift */; };
 		C03C94C121D9992900A52D45 /* RideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94C021D9992900A52D45 /* RideCell.swift */; };
+		C03C94C321D99D1200A52D45 /* RaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94C221D99D1200A52D45 /* RaceDetailView.swift */; };
 		C073549421D9171600D8FEF8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549321D9171600D8FEF8 /* NetworkService.swift */; };
 		C073549821D938D800D8FEF8 /* RaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549721D938D800D8FEF8 /* RaceListView.swift */; };
 		C073549A21D939AA00D8FEF8 /* RaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549921D939AA00D8FEF8 /* RaceCell.swift */; };
@@ -51,6 +52,7 @@
 		C03C94B921D9785000A52D45 /* RaceListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListViewMock.swift; sourceTree = "<group>"; };
 		C03C94BD21D97A7E00A52D45 /* RaceListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListPresenterTests.swift; sourceTree = "<group>"; };
 		C03C94C021D9992900A52D45 /* RideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCell.swift; sourceTree = "<group>"; };
+		C03C94C221D99D1200A52D45 /* RaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailView.swift; sourceTree = "<group>"; };
 		C073549321D9171600D8FEF8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C073549721D938D800D8FEF8 /* RaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListView.swift; sourceTree = "<group>"; };
 		C073549921D939AA00D8FEF8 /* RaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCell.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				C03C94C021D9992900A52D45 /* RideCell.swift */,
+				C03C94C221D99D1200A52D45 /* RaceDetailView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				C03C94C121D9992900A52D45 /* RideCell.swift in Sources */,
 				C0B3CA1A21D916C100F44B3A /* RequestData.swift in Sources */,
 				C07354A321D9443000D8FEF8 /* Horse.swift in Sources */,
+				C03C94C321D99D1200A52D45 /* RaceDetailView.swift in Sources */,
 				C073549E21D9438400D8FEF8 /* RaceListInteractor.swift in Sources */,
 				C07354A921D9570700D8FEF8 /* RaceListPresenter.swift in Sources */,
 				C07354AB21D9670200D8FEF8 /* RaceListRouter.swift in Sources */,

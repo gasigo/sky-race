@@ -98,7 +98,7 @@
                                     <outlet property="hourLabel" destination="h2b-TJ-h8f" id="3sA-Ss-vhZ"/>
                                     <outlet property="nameLabel" destination="pU3-dz-05M" id="7wq-i0-mkx"/>
                                     <outlet property="ridesCountLabel" destination="MhI-gm-Srs" id="SVv-0H-Ghi"/>
-                                    <segue destination="DK7-rk-Xgq" kind="show" id="yss-Hx-qwo"/>
+                                    <segue destination="DK7-rk-Xgq" kind="show" identifier="RaceDetailView" id="yss-Hx-qwo"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -113,10 +113,10 @@
             </objects>
             <point key="canvasLocation" x="-1500" y="-197"/>
         </scene>
-        <!--View Controller-->
+        <!--Race Detail View-->
         <scene sceneID="Ksp-ah-veU">
             <objects>
-                <viewController id="DK7-rk-Xgq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RaceDetailView" id="DK7-rk-Xgq" customClass="RaceDetailView" customModule="Sky_Race" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E5Y-8d-kIH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,7 +154,7 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="74" id="xmh-4A-4uS" customClass="RideCell" customModule="Sky_Race" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RideCell" rowHeight="74" id="xmh-4A-4uS" customClass="RideCell" customModule="Sky_Race" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xmh-4A-4uS" id="zCe-cw-J2s">
@@ -206,7 +206,21 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="DK7-rk-Xgq" id="wgL-Xv-awf"/>
+                                </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUQ-bd-WVG">
+                                <rect key="frame" x="340" y="128" width="27" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="rFY-qe-KVD"/>
+                                    <constraint firstAttribute="width" secondItem="VUQ-bd-WVG" secondAttribute="height" multiplier="288:212" id="vJU-BF-4Yu"/>
+                                </constraints>
+                                <state key="normal" image="order-icon"/>
+                                <connections>
+                                    <action selector="didTapOrderButton:" destination="DK7-rk-Xgq" eventType="touchUpInside" id="se1-nx-O97"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -217,6 +231,7 @@
                             <constraint firstItem="JjF-NL-ey0" firstAttribute="bottom" secondItem="JGS-fk-mgL" secondAttribute="bottom" id="Gpv-kp-chw"/>
                             <constraint firstItem="1cm-d2-PYu" firstAttribute="leading" secondItem="yjp-K4-jin" secondAttribute="trailing" constant="8" id="H6m-WV-2SP"/>
                             <constraint firstItem="JjF-NL-ey0" firstAttribute="trailing" secondItem="JGS-fk-mgL" secondAttribute="trailing" id="K34-xP-JtS"/>
+                            <constraint firstItem="JGS-fk-mgL" firstAttribute="trailing" secondItem="VUQ-bd-WVG" secondAttribute="trailing" constant="8" id="X92-dt-34d"/>
                             <constraint firstItem="JGS-fk-mgL" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hpF-T0-uge" secondAttribute="trailing" constant="8" id="Y62-lL-tub"/>
                             <constraint firstItem="JjF-NL-ey0" firstAttribute="leading" secondItem="JGS-fk-mgL" secondAttribute="leading" id="exR-bP-MCk"/>
                             <constraint firstItem="hpF-T0-uge" firstAttribute="centerY" secondItem="Dx2-Zp-gDN" secondAttribute="centerY" id="htk-Fs-uoQ"/>
@@ -225,13 +240,22 @@
                             <constraint firstItem="JGS-fk-mgL" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1cm-d2-PYu" secondAttribute="trailing" constant="8" id="nlv-gd-0Sw"/>
                             <constraint firstItem="yjp-K4-jin" firstAttribute="leading" secondItem="Dx2-Zp-gDN" secondAttribute="leading" id="pBJ-7G-aQc"/>
                             <constraint firstItem="Dx2-Zp-gDN" firstAttribute="leading" secondItem="JGS-fk-mgL" secondAttribute="leading" constant="16" id="qzo-mH-fdl"/>
+                            <constraint firstItem="VUQ-bd-WVG" firstAttribute="centerY" secondItem="1cm-d2-PYu" secondAttribute="centerY" id="ucN-I9-obR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JGS-fk-mgL"/>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="1cm-d2-PYu" id="Xfu-3Q-p7o"/>
+                        <outlet property="scheduleLabel" destination="hpF-T0-uge" id="ec8-5m-keX"/>
+                        <outlet property="tableView" destination="JjF-NL-ey0" id="cN3-ga-iZB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NNw-3K-ksk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-658.39999999999998" y="-197.45127436281859"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="order-icon" width="288" height="212"/>
+    </resources>
 </document>
