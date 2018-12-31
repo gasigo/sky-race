@@ -84,6 +84,7 @@
                                         <constraint firstItem="MhI-gm-Srs" firstAttribute="centerY" secondItem="111-ih-eWp" secondAttribute="centerY" id="Ola-dx-SRV"/>
                                         <constraint firstAttribute="bottom" secondItem="111-ih-eWp" secondAttribute="bottom" constant="10.5" id="Rwf-TJ-eAz"/>
                                         <constraint firstItem="MhI-gm-Srs" firstAttribute="top" secondItem="MD6-HK-kbh" secondAttribute="bottom" constant="23" id="VA9-vw-v92"/>
+                                        <constraint firstItem="MhI-gm-Srs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="h2b-TJ-h8f" secondAttribute="trailing" constant="8" id="WTk-68-Mg1"/>
                                         <constraint firstAttribute="trailing" secondItem="MD6-HK-kbh" secondAttribute="trailing" constant="16" id="YIu-kd-iZu"/>
                                         <constraint firstItem="111-ih-eWp" firstAttribute="leading" secondItem="MhI-gm-Srs" secondAttribute="trailing" constant="2" id="a0v-OC-q0R"/>
                                         <constraint firstItem="pU3-dz-05M" firstAttribute="centerY" secondItem="hM2-mz-c0v" secondAttribute="centerY" id="g0A-ts-cro"/>
@@ -234,6 +235,7 @@
                             <constraint firstItem="JGS-fk-mgL" firstAttribute="trailing" secondItem="VUQ-bd-WVG" secondAttribute="trailing" constant="8" id="X92-dt-34d"/>
                             <constraint firstItem="JGS-fk-mgL" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hpF-T0-uge" secondAttribute="trailing" constant="8" id="Y62-lL-tub"/>
                             <constraint firstItem="JjF-NL-ey0" firstAttribute="leading" secondItem="JGS-fk-mgL" secondAttribute="leading" id="exR-bP-MCk"/>
+                            <constraint firstItem="JjF-NL-ey0" firstAttribute="top" secondItem="yjp-K4-jin" secondAttribute="bottom" constant="18" id="ftC-NF-opV"/>
                             <constraint firstItem="hpF-T0-uge" firstAttribute="centerY" secondItem="Dx2-Zp-gDN" secondAttribute="centerY" id="htk-Fs-uoQ"/>
                             <constraint firstItem="hpF-T0-uge" firstAttribute="leading" secondItem="Dx2-Zp-gDN" secondAttribute="trailing" constant="8" id="kLT-P8-JRs"/>
                             <constraint firstItem="Dx2-Zp-gDN" firstAttribute="top" secondItem="JGS-fk-mgL" secondAttribute="top" constant="30" id="kgy-2x-4BX"/>
