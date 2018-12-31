@@ -11,6 +11,7 @@
 		C03C94B821D9769400A52D45 /* RaceListRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94B721D9769400A52D45 /* RaceListRouterMock.swift */; };
 		C03C94BA21D9785000A52D45 /* RaceListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94B921D9785000A52D45 /* RaceListViewMock.swift */; };
 		C03C94BE21D97A7E00A52D45 /* RaceListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94BD21D97A7E00A52D45 /* RaceListPresenterTests.swift */; };
+		C03C94C121D9992900A52D45 /* RideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94C021D9992900A52D45 /* RideCell.swift */; };
 		C073549421D9171600D8FEF8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549321D9171600D8FEF8 /* NetworkService.swift */; };
 		C073549821D938D800D8FEF8 /* RaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549721D938D800D8FEF8 /* RaceListView.swift */; };
 		C073549A21D939AA00D8FEF8 /* RaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549921D939AA00D8FEF8 /* RaceCell.swift */; };
@@ -49,6 +50,7 @@
 		C03C94B721D9769400A52D45 /* RaceListRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListRouterMock.swift; sourceTree = "<group>"; };
 		C03C94B921D9785000A52D45 /* RaceListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListViewMock.swift; sourceTree = "<group>"; };
 		C03C94BD21D97A7E00A52D45 /* RaceListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListPresenterTests.swift; sourceTree = "<group>"; };
+		C03C94C021D9992900A52D45 /* RideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCell.swift; sourceTree = "<group>"; };
 		C073549321D9171600D8FEF8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C073549721D938D800D8FEF8 /* RaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListView.swift; sourceTree = "<group>"; };
 		C073549921D939AA00D8FEF8 /* RaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCell.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		C03C94BF21D991DC00A52D45 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C03C94C021D9992900A52D45 /* RideCell.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		C073549521D9329E00D8FEF8 /* Race */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 				C080ADC421D904FC00F50646 /* Race.storyboard */,
 				C073549B21D9426800D8FEF8 /* RaceRequestData.swift */,
 				C073549621D932AA00D8FEF8 /* List */,
+				C03C94BF21D991DC00A52D45 /* Detail */,
 			);
 			path = Race;
 			sourceTree = "<group>";
@@ -353,6 +364,7 @@
 				C0B3CA1621D9167A00F44B3A /* HTTPMethod.swift in Sources */,
 				C0B3CA1421D9159400F44B3A /* Result.swift in Sources */,
 				C07354A721D9536C00D8FEF8 /* RaceListBuilder.swift in Sources */,
+				C03C94C121D9992900A52D45 /* RideCell.swift in Sources */,
 				C0B3CA1A21D916C100F44B3A /* RequestData.swift in Sources */,
 				C07354A321D9443000D8FEF8 /* Horse.swift in Sources */,
 				C073549E21D9438400D8FEF8 /* RaceListInteractor.swift in Sources */,
