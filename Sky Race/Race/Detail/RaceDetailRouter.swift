@@ -10,13 +10,14 @@ protocol RaceDetailRouterProtocol {
 }
 
 struct RaceDetailRouter: RaceDetailRouterProtocol {
-	private weak var view: RaceDetailViewProtocol!
+	private weak var view: RaceDetailView!
 	
-	init(view: RaceDetailViewProtocol) {
+	init(view: RaceDetailView) {
 		self.view = view
 	}
 	
 	func routeToRaceDetailView(using url: URL) {
-		// TODO
+		let webview = WebView(url: url)
+		self.view.navigationController?.pushViewController(webview, animated: true)
 	}
 }
