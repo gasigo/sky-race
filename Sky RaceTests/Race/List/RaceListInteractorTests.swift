@@ -24,7 +24,7 @@ class RaceListInteractorTests: XCTestCase {
 		// given
 		let expectation = XCTestExpectation(description: "get-races-ok")
 		let horse = Horse(name: "pangare", sex: "m")
-		let ride = Ride(clothNumber: 7, horse: horse, handicap: "4/7")
+		let ride = Ride(clothNumber: 7, horse: horse, handicap: "4/7", odds: "11/1", form: "form")
 		let race = Race(name: "mock race", date: "today", time: "now", rides: [ride])
 		let racesMock = [race, race, race]
 		let result: Result<[Race]> = .success(racesMock)
