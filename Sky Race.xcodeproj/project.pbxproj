@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C03C94B621D9746800A52D45 /* RaceListInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94B521D9746800A52D45 /* RaceListInteractorMock.swift */; };
+		C03C94B821D9769400A52D45 /* RaceListRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94B721D9769400A52D45 /* RaceListRouterMock.swift */; };
+		C03C94BA21D9785000A52D45 /* RaceListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94B921D9785000A52D45 /* RaceListViewMock.swift */; };
+		C03C94BE21D97A7E00A52D45 /* RaceListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94BD21D97A7E00A52D45 /* RaceListPresenterTests.swift */; };
+		C03C94C121D9992900A52D45 /* RideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94C021D9992900A52D45 /* RideCell.swift */; };
+		C03C94C321D99D1200A52D45 /* RaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94C221D99D1200A52D45 /* RaceDetailView.swift */; };
+		C03C94C521D9A99600A52D45 /* RaceDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94C421D9A99600A52D45 /* RaceDetailPresenter.swift */; };
+		C03C94C921D9AD3200A52D45 /* RideDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94C821D9AD3200A52D45 /* RideDetailBuilder.swift */; };
+		C03C94CB21D9AFC000A52D45 /* RaceDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94CA21D9AFC000A52D45 /* RaceDetailRouter.swift */; };
+		C03C94CE21D9B8E400A52D45 /* RaceDetailRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94CD21D9B8E400A52D45 /* RaceDetailRouterMock.swift */; };
+		C03C94D021D9B92E00A52D45 /* RaceDetailViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94CF21D9B92E00A52D45 /* RaceDetailViewMock.swift */; };
+		C03C94D321D9BAA600A52D45 /* RaceDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94D221D9BAA600A52D45 /* RaceDetailPresenterTests.swift */; };
+		C03C94DB21D9BF5900A52D45 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C94D921D9BF5900A52D45 /* WebView.swift */; };
+		C03C94DC21D9BF5900A52D45 /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C03C94DA21D9BF5900A52D45 /* WebView.xib */; };
+		C073549421D9171600D8FEF8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549321D9171600D8FEF8 /* NetworkService.swift */; };
+		C073549821D938D800D8FEF8 /* RaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549721D938D800D8FEF8 /* RaceListView.swift */; };
+		C073549A21D939AA00D8FEF8 /* RaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549921D939AA00D8FEF8 /* RaceCell.swift */; };
+		C073549C21D9426800D8FEF8 /* RaceRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549B21D9426800D8FEF8 /* RaceRequestData.swift */; };
+		C073549E21D9438400D8FEF8 /* RaceListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073549D21D9438400D8FEF8 /* RaceListInteractor.swift */; };
+		C07354A121D943FE00D8FEF8 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07354A021D943FE00D8FEF8 /* Ride.swift */; };
+		C07354A321D9443000D8FEF8 /* Horse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07354A221D9443000D8FEF8 /* Horse.swift */; };
+		C07354A521D947EC00D8FEF8 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07354A421D947EC00D8FEF8 /* Race.swift */; };
+		C07354A721D9536C00D8FEF8 /* RaceListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07354A621D9536C00D8FEF8 /* RaceListBuilder.swift */; };
+		C07354A921D9570700D8FEF8 /* RaceListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07354A821D9570700D8FEF8 /* RaceListPresenter.swift */; };
+		C07354AB21D9670200D8FEF8 /* RaceListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07354AA21D9670200D8FEF8 /* RaceListRouter.swift */; };
+		C07354B021D96C9900D8FEF8 /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07354AF21D96C9900D8FEF8 /* NetworkServiceMock.swift */; };
+		C07354B421D970D800D8FEF8 /* RaceListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07354B321D970D800D8FEF8 /* RaceListInteractorTests.swift */; };
+		C080ADC121D904FC00F50646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C080ADC021D904FC00F50646 /* AppDelegate.swift */; };
+		C080ADC621D904FC00F50646 /* Race.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C080ADC421D904FC00F50646 /* Race.storyboard */; };
+		C080ADC821D904FE00F50646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C080ADC721D904FE00F50646 /* Assets.xcassets */; };
+		C080ADCB21D904FE00F50646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C080ADC921D904FE00F50646 /* LaunchScreen.storyboard */; };
+		C0B3CA1421D9159400F44B3A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B3CA1321D9159400F44B3A /* Result.swift */; };
+		C0B3CA1621D9167A00F44B3A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B3CA1521D9167A00F44B3A /* HTTPMethod.swift */; };
+		C0B3CA1821D9169C00F44B3A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B3CA1721D9169C00F44B3A /* NetworkError.swift */; };
+		C0B3CA1A21D916C100F44B3A /* RequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B3CA1921D916C100F44B3A /* RequestData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C080ADD221D904FE00F50646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C080ADB521D904FC00F50646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C080ADBC21D904FC00F50646;
+			remoteInfo = "Sky Race";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C03C94B521D9746800A52D45 /* RaceListInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListInteractorMock.swift; sourceTree = "<group>"; };
+		C03C94B721D9769400A52D45 /* RaceListRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListRouterMock.swift; sourceTree = "<group>"; };
+		C03C94B921D9785000A52D45 /* RaceListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListViewMock.swift; sourceTree = "<group>"; };
+		C03C94BD21D97A7E00A52D45 /* RaceListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListPresenterTests.swift; sourceTree = "<group>"; };
+		C03C94C021D9992900A52D45 /* RideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCell.swift; sourceTree = "<group>"; };
+		C03C94C221D99D1200A52D45 /* RaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailView.swift; sourceTree = "<group>"; };
+		C03C94C421D9A99600A52D45 /* RaceDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailPresenter.swift; sourceTree = "<group>"; };
+		C03C94C821D9AD3200A52D45 /* RideDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideDetailBuilder.swift; sourceTree = "<group>"; };
+		C03C94CA21D9AFC000A52D45 /* RaceDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailRouter.swift; sourceTree = "<group>"; };
+		C03C94CD21D9B8E400A52D45 /* RaceDetailRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailRouterMock.swift; sourceTree = "<group>"; };
+		C03C94CF21D9B92E00A52D45 /* RaceDetailViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailViewMock.swift; sourceTree = "<group>"; };
+		C03C94D221D9BAA600A52D45 /* RaceDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailPresenterTests.swift; sourceTree = "<group>"; };
+		C03C94D921D9BF5900A52D45 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		C03C94DA21D9BF5900A52D45 /* WebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebView.xib; sourceTree = "<group>"; };
+		C073549321D9171600D8FEF8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C073549721D938D800D8FEF8 /* RaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListView.swift; sourceTree = "<group>"; };
+		C073549921D939AA00D8FEF8 /* RaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCell.swift; sourceTree = "<group>"; };
+		C073549B21D9426800D8FEF8 /* RaceRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceRequestData.swift; sourceTree = "<group>"; };
+		C073549D21D9438400D8FEF8 /* RaceListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListInteractor.swift; sourceTree = "<group>"; };
+		C07354A021D943FE00D8FEF8 /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
+		C07354A221D9443000D8FEF8 /* Horse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horse.swift; sourceTree = "<group>"; };
+		C07354A421D947EC00D8FEF8 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
+		C07354A621D9536C00D8FEF8 /* RaceListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListBuilder.swift; sourceTree = "<group>"; };
+		C07354A821D9570700D8FEF8 /* RaceListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListPresenter.swift; sourceTree = "<group>"; };
+		C07354AA21D9670200D8FEF8 /* RaceListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListRouter.swift; sourceTree = "<group>"; };
+		C07354AF21D96C9900D8FEF8 /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
+		C07354B321D970D800D8FEF8 /* RaceListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListInteractorTests.swift; sourceTree = "<group>"; };
+		C080ADBD21D904FC00F50646 /* Sky Race.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sky Race.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C080ADC021D904FC00F50646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C080ADC521D904FC00F50646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Race.storyboard; sourceTree = "<group>"; };
+		C080ADC721D904FE00F50646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C080ADCA21D904FE00F50646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C080ADCC21D904FE00F50646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C080ADD121D904FE00F50646 /* Sky RaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sky RaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C080ADD721D904FE00F50646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0B3CA1321D9159400F44B3A /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		C0B3CA1521D9167A00F44B3A /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		C0B3CA1721D9169C00F44B3A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C0B3CA1921D916C100F44B3A /* RequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C080ADBA21D904FC00F50646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C080ADCE21D904FE00F50646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C03C94B321D9744C00A52D45 /* Race */ = {
+			isa = PBXGroup;
+			children = (
+				C03C94CC21D9B82500A52D45 /* Detail */,
+				C03C94B421D9745200A52D45 /* List */,
+			);
+			path = Race;
+			sourceTree = "<group>";
+		};
+		C03C94B421D9745200A52D45 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				C03C94B721D9769400A52D45 /* RaceListRouterMock.swift */,
+				C03C94B521D9746800A52D45 /* RaceListInteractorMock.swift */,
+				C03C94B921D9785000A52D45 /* RaceListViewMock.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		C03C94BF21D991DC00A52D45 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C03C94C221D99D1200A52D45 /* RaceDetailView.swift */,
+				C03C94C421D9A99600A52D45 /* RaceDetailPresenter.swift */,
+				C03C94CA21D9AFC000A52D45 /* RaceDetailRouter.swift */,
+				C03C94C821D9AD3200A52D45 /* RideDetailBuilder.swift */,
+				C03C94C021D9992900A52D45 /* RideCell.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C03C94CC21D9B82500A52D45 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C03C94CD21D9B8E400A52D45 /* RaceDetailRouterMock.swift */,
+				C03C94CF21D9B92E00A52D45 /* RaceDetailViewMock.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C03C94D121D9B9E400A52D45 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C03C94D221D9BAA600A52D45 /* RaceDetailPresenterTests.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C03C94D421D9BE8400A52D45 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				C03C94DA21D9BF5900A52D45 /* WebView.xib */,
+				C03C94D921D9BF5900A52D45 /* WebView.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		C073549521D9329E00D8FEF8 /* Race */ = {
+			isa = PBXGroup;
+			children = (
+				C073549F21D943EB00D8FEF8 /* Entity */,
+				C080ADC421D904FC00F50646 /* Race.storyboard */,
+				C073549B21D9426800D8FEF8 /* RaceRequestData.swift */,
+				C073549621D932AA00D8FEF8 /* List */,
+				C03C94BF21D991DC00A52D45 /* Detail */,
+			);
+			path = Race;
+			sourceTree = "<group>";
+		};
+		C073549621D932AA00D8FEF8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				C073549721D938D800D8FEF8 /* RaceListView.swift */,
+				C07354A821D9570700D8FEF8 /* RaceListPresenter.swift */,
+				C073549D21D9438400D8FEF8 /* RaceListInteractor.swift */,
+				C07354AA21D9670200D8FEF8 /* RaceListRouter.swift */,
+				C07354A621D9536C00D8FEF8 /* RaceListBuilder.swift */,
+				C073549921D939AA00D8FEF8 /* RaceCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		C073549F21D943EB00D8FEF8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C07354A421D947EC00D8FEF8 /* Race.swift */,
+				C07354A021D943FE00D8FEF8 /* Ride.swift */,
+				C07354A221D9443000D8FEF8 /* Horse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C07354AC21D96C5C00D8FEF8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C03C94B321D9744C00A52D45 /* Race */,
+				C07354AD21D96C7E00D8FEF8 /* Core */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		C07354AD21D96C7E00D8FEF8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C07354AE21D96C8700D8FEF8 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C07354AE21D96C8700D8FEF8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C07354AF21D96C9900D8FEF8 /* NetworkServiceMock.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C07354B121D970BA00D8FEF8 /* Race */ = {
+			isa = PBXGroup;
+			children = (
+				C03C94D121D9B9E400A52D45 /* Detail */,
+				C07354B221D970C200D8FEF8 /* List */,
+			);
+			path = Race;
+			sourceTree = "<group>";
+		};
+		C07354B221D970C200D8FEF8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				C07354B321D970D800D8FEF8 /* RaceListInteractorTests.swift */,
+				C03C94BD21D97A7E00A52D45 /* RaceListPresenterTests.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		C080ADB421D904FC00F50646 = {
+			isa = PBXGroup;
+			children = (
+				C080ADBF21D904FC00F50646 /* Sky Race */,
+				C080ADD421D904FE00F50646 /* Sky RaceTests */,
+				C080ADBE21D904FC00F50646 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C080ADBE21D904FC00F50646 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C080ADBD21D904FC00F50646 /* Sky Race.app */,
+				C080ADD121D904FE00F50646 /* Sky RaceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C080ADBF21D904FC00F50646 /* Sky Race */ = {
+			isa = PBXGroup;
+			children = (
+				C0B3CA1221D9157F00F44B3A /* Core */,
+				C073549521D9329E00D8FEF8 /* Race */,
+				C080ADC021D904FC00F50646 /* AppDelegate.swift */,
+				C080ADC721D904FE00F50646 /* Assets.xcassets */,
+				C080ADC921D904FE00F50646 /* LaunchScreen.storyboard */,
+				C080ADCC21D904FE00F50646 /* Info.plist */,
+			);
+			path = "Sky Race";
+			sourceTree = "<group>";
+		};
+		C080ADD421D904FE00F50646 /* Sky RaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				C07354B121D970BA00D8FEF8 /* Race */,
+				C07354AC21D96C5C00D8FEF8 /* Mocks */,
+				C080ADD721D904FE00F50646 /* Info.plist */,
+			);
+			path = "Sky RaceTests";
+			sourceTree = "<group>";
+		};
+		C0B3CA1121D9154C00F44B3A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C0B3CA1521D9167A00F44B3A /* HTTPMethod.swift */,
+				C0B3CA1721D9169C00F44B3A /* NetworkError.swift */,
+				C0B3CA1921D916C100F44B3A /* RequestData.swift */,
+				C073549321D9171600D8FEF8 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C0B3CA1221D9157F00F44B3A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C03C94D421D9BE8400A52D45 /* WebView */,
+				C0B3CA1121D9154C00F44B3A /* Network */,
+				C0B3CA1321D9159400F44B3A /* Result.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C080ADBC21D904FC00F50646 /* Sky Race */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C080ADDA21D904FE00F50646 /* Build configuration list for PBXNativeTarget "Sky Race" */;
+			buildPhases = (
+				C080ADB921D904FC00F50646 /* Sources */,
+				C080ADBA21D904FC00F50646 /* Frameworks */,
+				C080ADBB21D904FC00F50646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sky Race";
+			productName = "Sky Race";
+			productReference = C080ADBD21D904FC00F50646 /* Sky Race.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C080ADD021D904FE00F50646 /* Sky RaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C080ADDD21D904FE00F50646 /* Build configuration list for PBXNativeTarget "Sky RaceTests" */;
+			buildPhases = (
+				C080ADCD21D904FE00F50646 /* Sources */,
+				C080ADCE21D904FE00F50646 /* Frameworks */,
+				C080ADCF21D904FE00F50646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C080ADD321D904FE00F50646 /* PBXTargetDependency */,
+			);
+			name = "Sky RaceTests";
+			productName = "Sky RaceTests";
+			productReference = C080ADD121D904FE00F50646 /* Sky RaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C080ADB521D904FC00F50646 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = GDev;
+				TargetAttributes = {
+					C080ADBC21D904FC00F50646 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C080ADD021D904FE00F50646 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C080ADBC21D904FC00F50646;
+					};
+				};
+			};
+			buildConfigurationList = C080ADB821D904FC00F50646 /* Build configuration list for PBXProject "Sky Race" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C080ADB421D904FC00F50646;
+			productRefGroup = C080ADBE21D904FC00F50646 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C080ADBC21D904FC00F50646 /* Sky Race */,
+				C080ADD021D904FE00F50646 /* Sky RaceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C080ADBB21D904FC00F50646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C080ADCB21D904FE00F50646 /* LaunchScreen.storyboard in Resources */,
+				C03C94DC21D9BF5900A52D45 /* WebView.xib in Resources */,
+				C080ADC821D904FE00F50646 /* Assets.xcassets in Resources */,
+				C080ADC621D904FC00F50646 /* Race.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C080ADCF21D904FE00F50646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C080ADB921D904FC00F50646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B3CA1621D9167A00F44B3A /* HTTPMethod.swift in Sources */,
+				C0B3CA1421D9159400F44B3A /* Result.swift in Sources */,
+				C07354A721D9536C00D8FEF8 /* RaceListBuilder.swift in Sources */,
+				C03C94C121D9992900A52D45 /* RideCell.swift in Sources */,
+				C03C94C921D9AD3200A52D45 /* RideDetailBuilder.swift in Sources */,
+				C0B3CA1A21D916C100F44B3A /* RequestData.swift in Sources */,
+				C03C94CB21D9AFC000A52D45 /* RaceDetailRouter.swift in Sources */,
+				C07354A321D9443000D8FEF8 /* Horse.swift in Sources */,
+				C03C94C321D99D1200A52D45 /* RaceDetailView.swift in Sources */,
+				C073549E21D9438400D8FEF8 /* RaceListInteractor.swift in Sources */,
+				C07354A921D9570700D8FEF8 /* RaceListPresenter.swift in Sources */,
+				C07354AB21D9670200D8FEF8 /* RaceListRouter.swift in Sources */,
+				C03C94C521D9A99600A52D45 /* RaceDetailPresenter.swift in Sources */,
+				C07354A521D947EC00D8FEF8 /* Race.swift in Sources */,
+				C073549821D938D800D8FEF8 /* RaceListView.swift in Sources */,
+				C07354A121D943FE00D8FEF8 /* Ride.swift in Sources */,
+				C073549A21D939AA00D8FEF8 /* RaceCell.swift in Sources */,
+				C080ADC121D904FC00F50646 /* AppDelegate.swift in Sources */,
+				C0B3CA1821D9169C00F44B3A /* NetworkError.swift in Sources */,
+				C073549421D9171600D8FEF8 /* NetworkService.swift in Sources */,
+				C073549C21D9426800D8FEF8 /* RaceRequestData.swift in Sources */,
+				C03C94DB21D9BF5900A52D45 /* WebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C080ADCD21D904FE00F50646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07354B021D96C9900D8FEF8 /* NetworkServiceMock.swift in Sources */,
+				C03C94B821D9769400A52D45 /* RaceListRouterMock.swift in Sources */,
+				C03C94BA21D9785000A52D45 /* RaceListViewMock.swift in Sources */,
+				C03C94BE21D97A7E00A52D45 /* RaceListPresenterTests.swift in Sources */,
+				C03C94CE21D9B8E400A52D45 /* RaceDetailRouterMock.swift in Sources */,
+				C07354B421D970D800D8FEF8 /* RaceListInteractorTests.swift in Sources */,
+				C03C94D321D9BAA600A52D45 /* RaceDetailPresenterTests.swift in Sources */,
+				C03C94D021D9B92E00A52D45 /* RaceDetailViewMock.swift in Sources */,
+				C03C94B621D9746800A52D45 /* RaceListInteractorMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C080ADD321D904FE00F50646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C080ADBC21D904FC00F50646 /* Sky Race */;
+			targetProxy = C080ADD221D904FE00F50646 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C080ADC421D904FC00F50646 /* Race.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C080ADC521D904FC00F50646 /* Base */,
+			);
+			name = Race.storyboard;
+			sourceTree = "<group>";
+		};
+		C080ADC921D904FE00F50646 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C080ADCA21D904FE00F50646 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C080ADD821D904FE00F50646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C080ADD921D904FE00F50646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C080ADDB21D904FE00F50646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Sky Race/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sky-race";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C080ADDC21D904FE00F50646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Sky Race/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sky-race";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C080ADDE21D904FE00F50646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Sky RaceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gdev.Sky-RaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sky Race.app/Sky Race";
+			};
+			name = Debug;
+		};
+		C080ADDF21D904FE00F50646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Sky RaceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gdev.Sky-RaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sky Race.app/Sky Race";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C080ADB821D904FC00F50646 /* Build configuration list for PBXProject "Sky Race" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C080ADD821D904FE00F50646 /* Debug */,
+				C080ADD921D904FE00F50646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C080ADDA21D904FE00F50646 /* Build configuration list for PBXNativeTarget "Sky Race" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C080ADDB21D904FE00F50646 /* Debug */,
+				C080ADDC21D904FE00F50646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C080ADDD21D904FE00F50646 /* Build configuration list for PBXNativeTarget "Sky RaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C080ADDE21D904FE00F50646 /* Debug */,
+				C080ADDF21D904FE00F50646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C080ADB521D904FC00F50646 /* Project object */;
+}
