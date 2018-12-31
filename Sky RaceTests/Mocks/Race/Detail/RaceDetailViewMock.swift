@@ -36,6 +36,10 @@ class RaceDetailViewMock: RaceDetailViewProtocol {
 		expectation.fulfill()
 	}
 	
+	func presentActionSheet(title: String, options: [OrderOption]) {
+		// TODO
+	}
+	
 	enum ExpectationConstants: String {
 		case load
 	}
